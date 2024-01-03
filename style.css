@@ -39,10 +39,15 @@ body {
   box-shadow: 6px 6px 0px 1px black;
 }
 
+
 .box img {
-  border-radius: 10px;
   width: 100%;
+  border-radius: 10px; /* Your desired radius */
+  object-fit: cover; /* Adjust the image's fit within the element */
+  overflow: hidden; /* Ensure the radius clipping */
+  display: block; /* Removes any default inline spacing */
 }
+
 
 .learn {
   background-color: var(--main-color);
