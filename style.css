@@ -1,0 +1,90 @@
+:root {
+  --main-color: hsl(47, 88%, 63%);
+}
+
+@font-face {
+  font-family: semibold;
+  src: url('fonts/Figtree-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: extrabold;
+  src: url('fonts/Figtree-ExtraBold.ttf');
+}
+
+body, html {
+  background-color: var(--main-color);
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  background-color: white;
+  padding: 20px;
+  border: black solid 1px;
+  border-radius: 15px;
+  max-width: 320px;
+  box-shadow: 6px 6px 0px 1px black;
+}
+
+.box img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.learn {
+  background-color: var(--main-color);
+  padding: 6px 12px;
+  font-family: semibold;
+  border-radius: 5px;
+}
+
+.date {
+  font-family: semibold;
+  font-size: 0.8em;
+}
+
+h1 {
+  margin: 0;
+  font-family: extrabold;
+  font-size: 1.5em;
+}
+
+h1:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  font-family: semibold;
+  color: hsl(0, 0%, 50%);
+}
+
+.author {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.author span {
+  font-family: extrabold;
+}
